@@ -1,4 +1,5 @@
-# Columns in data: pos, chr, Allele1, Allele2
+# df is summary statistic data
+# Columns in df include: pos, chr, Allele1, Allele2
 n <- nrow(df)
 for (i in 1:n){
 	a1 <- toupper(df$Allele1[i])
