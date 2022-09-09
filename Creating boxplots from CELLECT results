@@ -14,6 +14,7 @@ library(dplyr)  # for mutate
 # edit this based on chosen data/phenotypes
 
 # phenotypes need to be consistent with CELLECT output directory names
+# for the alternative annotations, add "_ALT" on the end
 phenotypes <- c("BMI",  "CAD",  "HT",  "NAFLD",  "PCOS", "T2DadjBMI", "Testosterone_F",  "Testosterone_M",  "WHRadjBMI", "HOMAIRadjBMI")
 
 # data_source options: "atlas", "lindg"
