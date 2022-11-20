@@ -1,5 +1,5 @@
 #############################################################
-## Preprocessing Metadata
+## Filter Metadata
 ## melodyjparker14@gmail.com - July 22
 ## This code filters the atlas metadata into CELLECT-input format, separating for mouse and human cells.
 ## The metadata contains information for both mouse and human cells.
@@ -24,7 +24,8 @@ colnames(metadata) <- c("cell_id","cell_type")
 metadata_mm <- metadata[match(barcodes_mm,metadata$cell_id),]
 metadata_mm <- metadata[match(barcodes_mm,metadata$cell_id),]
 
-# Could also use this
+# Could also use this. 
+# However, the first options ensure barcodes and metadata match up
 # metadata_mm <- metadata[grep("mm", metadata$cell_id),]
 # metadata_hs <- metadata[grep("hs", metadata$cell_id),]
 
