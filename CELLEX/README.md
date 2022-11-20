@@ -40,4 +40,4 @@ The data were annotated in two different ways, thus two metadata files were prod
 Use the lindg_adipo_data_prep.R script.
 
 ### 2. Run CELLEX
-Read in the count data and metadata to python and then run CELLEX. Use lindg_run_CELLECT.py
+Read in the count data and metadata to python and then run CELLEX. Use lindg_run_CELLECT.py script.
