@@ -1,7 +1,7 @@
 #############################################################
 ## Preprocessing Metadata
 ## melodyjparker14@gmail.com - July 22
-## This code filters the atlas metadata into CELLECT-input format.
+## This code filters the atlas metadata into CELLECT-input format, separating for mouse and human cells.
 ## The metadata contains information for both mouse and human cells.
 ## https://www.ncbi.nlm.nih.gov/geo/query/acc.cgi?acc=GSE176171
 #############################################################
