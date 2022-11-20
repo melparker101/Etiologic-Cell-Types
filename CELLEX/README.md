@@ -1,9 +1,10 @@
-# CELLEX Workflow for Single-Nuclei Data
+# CELLEX Workflow
+Create a new conda environment and install CELLEX
+- https://github.com/perslab/CELLEX
 
-### 1. Create a new conda environment and install CELLEX
-https://github.com/perslab/CELLEX
+## Single-Nuclei Data
 
-### 2. Download metadata and matrix files (barcodes, features, mtx) for both mouse and human cells
+### 1. Download metadata and matrix files (barcodes, features, mtx) for both mouse and human cells
 https://www.ncbi.nlm.nih.gov/geo/query/acc.cgi?acc=GSE176171
 ```
 mkdir mouse_matrix_files
@@ -25,9 +26,18 @@ cd ..
 https://ftp.ncbi.nlm.nih.gov/geo/series/GSE176nnn/GSE176171/suppl/GSE176171_cell_metadata.tsv.gz
 ```
 
-### 3. Filter metadata 
+### 2. Filter metadata 
 Use filter_metadata.R to filter metadata and create two separate files for mouse and human.
 
-### 4. Run CELLEX
+### 3. Run CELLEX
 Use run_CELLEX.py to make count matrix in python and run CELLEX.
 The count matrix can also be made in R with Seurat and uploaded to python, however, saving it as a CSV file may be difficult due to how large and sparse the matrix is.
+
+## In-House Data
+The data were annotated in two different ways, thus two metadata files were produced.
+
+### 1. Filter count data for each metadata file
+Use the lind_filter_counts.R script.
+
+### 2. Run CELLEX
+Read in the count data and metadata to python and then run CELLEX.
