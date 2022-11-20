@@ -2,7 +2,7 @@
 Create a new conda environment and install CELLEX
 - https://github.com/perslab/CELLEX
 
-## Single-Nuclei Data
+## Atlas Single-Nuclei Data
 
 ### 1. Download metadata and matrix files (barcodes, features, mtx) for both mouse and human cells
 https://www.ncbi.nlm.nih.gov/geo/query/acc.cgi?acc=GSE176171
@@ -27,17 +27,17 @@ https://ftp.ncbi.nlm.nih.gov/geo/series/GSE176nnn/GSE176171/suppl/GSE176171_cell
 ```
 
 ### 2. Filter metadata 
-Use filter_metadata.R to filter metadata and create two separate files for mouse and human.
+Use atlas_filter_metadata.R to filter metadata and create two separate files for mouse and human.
 
 ### 3. Run CELLEX
-Use run_CELLEX.py to make count matrix in python and run CELLEX.
+Use atlas_run_CELLEX.py to make count matrix in python and run CELLEX. Do this separately for mouse and human data.
 The count matrix can also be made in R with Seurat and uploaded to python, however, saving it as a CSV file may be difficult due to how large and sparse the matrix is.
 
 ## In-House Data
 The data were annotated in two different ways, thus two metadata files were produced.
 
 ### 1. Filter count data for each metadata file
-Use the lind_filter_counts.R script.
+Use the lindg_adipo_data_prep.R script.
 
 ### 2. Run CELLEX
-Read in the count data and metadata to python and then run CELLEX.
+Read in the count data and metadata to python and then run CELLEX. Use lindg_run_CELLECT.py
