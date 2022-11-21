@@ -8,7 +8,7 @@ Workflow for running CELLECT:
 
 ### Install CELLECT
 Follow the instructions from the CELLECT github.
-https://github.com/perslab/CELLECT < \b>
+https://github.com/perslab/CELLECT <br />
 
 ### Clone CELLECT
 ```
@@ -46,9 +46,9 @@ conda activate munge_ldsc
 ```
 ### Config file
 Modify the config.yml file, specifying the paths of:
-- input - ESMU CSV file, e.g. EMSU_files/atlas_sc_esmu.csv
-- input - GWAS sumstats file, e.g. sumstats/BMI_munged.sumstats.gz
-- output - results directory, e.g. CELLECT-ATLAS/BMI 
+- input - ESMU CSV file, e.g. EMSU_files/atlas_sc_esmu.csv;
+- input - GWAS sumstats file, e.g. sumstats/BMI_munged.sumstats.gz;
+- output - results directory, e.g. CELLECT-ATLAS/BMI.
 
 ```
 # Example:
