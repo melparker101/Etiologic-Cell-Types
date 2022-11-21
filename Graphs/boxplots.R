@@ -1,6 +1,7 @@
 #############################################################
 ## Creating boxplots from CELLECT results
 ## melodyjparker14@gmail.com - Sept 22
+## Plot size needs adjusting for different number of phenotypes.
 #############################################################
 
 ##############################
@@ -34,8 +35,7 @@ data_type <- paste("CELLECT", toupper(data_source), toupper(tissue_type), touppe
 # "CELLECT-ATLAS-ADIPO-SN"
 
 # input files need to be inside loop in main code
-output_file <- paste("//well/lindgren/users/mzf347/software/CELLECT/plots/", data_source, "_", tissue_type, "_", RNAseq_type, sep="")
-# "//well/lindgren/users/mzf347/software/CELLECT/plots/atlas_adipo_sn.pdf"
+output_file <- paste("CELLECT/plots/", data_source, "_", tissue_type, "_", RNAseq_type, sep="")
 
 ##############################
 # 3 - Define functions
@@ -51,7 +51,7 @@ results_col <- function(x) {
 # make matrix for barplot input
 for (pheno in phenotypes){
   # read in results
-  prioritization <- read.csv(paste("//well/lindgren/users/mzf347/software/CELLECT", data_type, pheno, "CELLECT-LDSC/results/prioritization.csv", sep="/"))
+  prioritization <- read.csv(paste("CELLECT", data_type, pheno, "CELLECT-LDSC/results/prioritization.csv", sep="/"))
   # use function to add -log(pvalue) column
   prioritization <- results_col(pheno)
   # add column to joint df
