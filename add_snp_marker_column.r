@@ -1,3 +1,4 @@
+# Code from Laura Wittemans
 # df is summary statistic data
 # Columns in df include: pos, chr, Allele1, Allele2
 n <- nrow(df)
