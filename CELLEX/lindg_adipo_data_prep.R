@@ -1,6 +1,6 @@
 #############################################################
 ## In-House Adipose Data CELLEX preperation
-## melodyjparker14@gmail.com - Sept 22
+## melodyjparker14@gmail.com - Aug 22
 ## This script filters the count data for two different annotation files.
 ## The count data is then saved as a matrix file with it's column and row names saved separately.
 ## There must be a better way to do this, but it works.
@@ -55,7 +55,7 @@ writeMMgz <- function(x, file) {
 }
 
 ##############################
-# 3 - Start main code
+# 4 - Start main code
 ##############################
 
 # Read in data
