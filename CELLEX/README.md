@@ -41,3 +41,14 @@ Use the lindg_adipo_data_prep.R script.
 
 ### 2. Run CELLEX
 Read in the count data and metadata to python and then run CELLEX. Use lindg_run_CELLEX.py script. 
+
+## Atlas Single Cell Data
+There are individual count matrices from 36 samples. 
+
+### 1. Merge Count Matrices, then filter
+Use Seurat to merge the data in R. Use the metadata file to filter, then filter the metadata using the count data.
+- https://satijalab.org/seurat/articles/merge_vignette.html
+
+### 2. Run CELLEX
+
+
