@@ -46,7 +46,7 @@ Read in the count data and metadata to python and then run CELLEX. Use lindg_run
 There are individual count matrices from 36 samples. 
 
 ### 1. Merge Count Matrices, then filter
-Use Seurat to merge the data in R. Use the metadata file to filter, then filter the metadata using the count data.
+Use Seurat to merge the data in R. Use the metadata file to filter, then filter the metadata using the count data. Use the atlas_merge_counts.R script.
 - https://satijalab.org/seurat/articles/merge_vignette.html
 
 ### 2. Run CELLEX
