@@ -15,7 +15,7 @@ import numpy as np
 import cellex
 
 ##############################
-# 1 - Source Files
+# 2 - Source Files
 ##############################
 in_counts <- "counts_f.mtx.gz"
 in_counts_alt <- "counts_alt_f.mtx.gz"
@@ -26,7 +26,7 @@ out_esmu <- "adipo_sn_lindgren_ens.esmu.csv.gz"
 out_esmu_alt <- "adipo_sn_alt_lindgren_ens.esmu.csv.gz"
 
 ##############################
-# 2 - Start code
+# 3 - Start code
 ##############################
 # Read in matrix files
 mat = scipy.io.mmread(in_counts)
