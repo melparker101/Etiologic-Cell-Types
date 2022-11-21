@@ -69,5 +69,6 @@ Create a conda environment for running snakemake. Run CELLECT via snakemake. The
 conda deactivate
 conda create -c conda-forge -c bioconda -n snakemake snakemake
 conda activate snakemake
+
 snakemake --use-conda -j -s cellect-ldsc.snakefile --configfile config_files/config.yml
 ```
