@@ -112,8 +112,7 @@ counts_sc_merged <- as.data.frame(adipo.combined@assays$RNA@counts)
 # Convert to matrix
 counts_sc_matrix <- as.matrix(counts_sc_merged)
 m <- as(counts_sc_matrix, "dgTMatrix")
-
-##############################
+#############################################################
 # Read in metadata
 metadata <- fread(in_metadata)
 
