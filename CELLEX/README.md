@@ -44,11 +44,14 @@ Read in the count data and metadata to python and then run CELLEX. Use lindg_run
 
 ## Atlas Single Cell Data
 There are individual count matrices from 36 samples. 
-
-### 1. Merge Count Matrices, then filter
+### 1. Download SC Data
+```
+wget https://www.ncbi.nlm.nih.gov/geo/download/?acc=GSE176171&format=file
+```
+### 2. Merge Count Matrices, then filter
 Use Seurat to merge the data in R. Use the metadata file to filter, then filter the metadata using the count data. Use the atlas_merge_counts.R script.
 - https://satijalab.org/seurat/articles/merge_vignette.html
 
-### 2. Run CELLEX
+### 3. Run CELLEX
 Use the lindg_run_CELLEX.py, but edit the "Source Files" section appropriately and comment out any script for the alternative annotations.
 
