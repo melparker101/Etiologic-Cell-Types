@@ -21,7 +21,7 @@ mv .vep software/ensembl-vep/.vep
 # Create a syslink to redirect for storing the cache in .vep 
 # as it will search in home dir
 ln -s software/ensembl-vep/.vep .vep
-# make a shortcut
+# Make a shortcut
 VEP=software/ensembl-vep/vep
 
 # Install cache
