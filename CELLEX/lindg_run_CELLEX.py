@@ -19,6 +19,10 @@ import cellex
 ##############################
 in_counts <- "counts_f.mtx.gz"
 in_counts_alt <- "counts_alt_f.mtx.gz"
+in_counts_row_names <- 'counts_row_names.txt'
+in_counts_alt_row_names <- 'counts_alt_row_names.txt'
+in_counts_col_names <- 'counts_col_names.txt'
+in_counts_alt_col_names <- 'counts_alt_col_names.txt'
 in_metadata = "./metadata_adipo_sn_f.csv"
 in_metadata_alt = "./metadata_alt_adipo_sn_f.csv"
 
@@ -40,7 +44,7 @@ matrix_alt = pd.DataFrame.sparse.from_spmatrix(mat_alt)
 # https://stackoverflow.com/questions/3142054/python-add-items-from-txt-file-into-a-list
 # with automatically closes the file afterwards
 # Leave empty line in
-with open('counts_col_names.txt', 'r') as f:
+with open(in_counts_col_names, 'r') as f:
     header = [line.strip() for line in f]
 
 matrix.columns=header
@@ -51,7 +55,7 @@ f.closed
 
 # Add alt columns
 # Leave empty line in
-with open('counts_alt_col_names.txt', 'r') as f:
+with open(in_counts_alt_col_names, 'r') as f:
     header_alt = [line.strip() for line in f]
 
 matrix_alt.columns=header_alt
@@ -60,7 +64,7 @@ matrix_alt.iloc[0:5,0:5]
 
 # Add rows
 # Leave empty line in
-with open('counts_row_names.txt', 'r') as f:
+with open(in_counts_row_names, 'r') as f:
     row_names = [line.strip() for line in f]
 
 matrix.index=row_names
@@ -68,7 +72,7 @@ matrix.iloc[0:5,0:2]
 
 # Add alt rows
 # Leave empty line in
-with open('counts_alt_row_names.txt', 'r') as f:
+with open(in_counts_alt_row_names, 'r') as f:
     row_names_alt = [line.strip() for line in f]
 
 matrix_alt.index=row_names_alt
