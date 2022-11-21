@@ -50,5 +50,5 @@ Use Seurat to merge the data in R. Use the metadata file to filter, then filter 
 - https://satijalab.org/seurat/articles/merge_vignette.html
 
 ### 2. Run CELLEX
-
+Use the lindg_run_CELLEX.py, but edit the "Source Files" section appropriately and comment out any script for the alternative annotations.
 
