@@ -9,22 +9,22 @@ Data used:
 - in-House ovary SN-seq data.
 
 Phenotypes used for adipose tissue:
-- BMI;
-- WHRadjBMI;
-- T2DadjBMI;
-- HT;
-- CAD;
-- NAFLD;
-- Homa-ir-adjBMI;
-- PCOS;
-- Testosterone.
+- BMI
+- WHRadjBMI
+- T2DadjBMI
+- HT
+- CAD
+- NAFLD
+- Homa-ir-adjBMI
+- PCOS
+- Testosterone
 
 Phenotypes used for ovary tissue:
 - PCOS;
-- Infertility (3 types);
-- Testosterone;
-- BMI;
-- WHRadjBMI.
+- Infertility (3 types)
+- Testosterone
+- BMI
+- WHRadjBMI
 
 
 ## Sc-linker
