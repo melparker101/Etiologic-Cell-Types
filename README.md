@@ -20,7 +20,7 @@ Phenotypes used for adipose tissue:
 - Testosterone
 
 Phenotypes used for ovary tissue:
-- PCOS;
+- PCOS
 - Infertility (3 types)
 - Testosterone
 - BMI
