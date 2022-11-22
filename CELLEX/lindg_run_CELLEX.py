@@ -50,7 +50,7 @@ with open(in_counts_col_names, 'r') as f:
 matrix.columns=header
 matrix.iloc[0:5,0:2]
 # f.close() not needed
-# check if file is closed
+# Check if file is closed
 f.closed
 
 # Add alt columns
